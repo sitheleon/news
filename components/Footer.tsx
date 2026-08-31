@@ -1,0 +1,1 @@
+export function Footer() { return <footer className="site-footer"><div className="site-width"><p><b>해동일보</b>　회사소개　|　광고문의　|　제보하기　|　이용약관　|　개인정보보호정책</p><p>본 사이트의 모든 콘텐츠는 해동일보에 저작권이 있습니다. 무단 전재 및 재배포를 금합니다.</p><small>해동일보사　강원도 해동시 중앙로 17　대표전화 033-000-0000　등록번호 가-00000</small></div></footer> }

@@ -1,5 +1,26 @@
 @import 'tailwindcss';
 
+/* Reserve space so the fixed exit control never covers the page header. */
+.with-workstation-exit { padding-top: calc(72px + env(safe-area-inset-top, 0px)); }
+.workstation-exit {
+  position: fixed;
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  right: calc(12px + env(safe-area-inset-right, 0px));
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  background: #18212d;
+  color: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+  touch-action: manipulation;
+}
+.workstation-exit:hover { background: #334155; color: #fff; text-decoration: none; }
+.workstation-exit:focus-visible { background: #334155; outline: 3px solid #2563eb; outline-offset: 3px; }
+
 :root { --background: #f4f4f1; --foreground: #222; --navy: #18314f; --red: #8f2020; --line: #c9c9c5; --paper: #fff; --muted: #777; }
 @theme inline { --color-background: var(--background); --color-foreground: var(--foreground); }
 * { box-sizing: border-box; }

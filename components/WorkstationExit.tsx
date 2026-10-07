@@ -2,7 +2,7 @@ export function WorkstationExit() {
   return (
     <a
       className="workstation-exit"
-      href="https://rig-bottom-desktop.vercel.app"
+      href="https://rigdesktop.netlify.app"
       aria-label="워크스테이션으로 돌아가기"
       title="워크스테이션으로 돌아가기"
     >
